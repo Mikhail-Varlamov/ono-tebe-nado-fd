@@ -57,23 +57,17 @@ main {
 
 .address {
   font-style: inherit;
-}
-
-.header__address {
-  justify-self: end;
-  font-style: inherit;
-}
-
-.address__item {
-  display: block;
   font-size: 18px;
   line-height: 1.35;
   text-underline-position: under;
 }
 
-.address__address-text {
-  font-size: 18px;
-  line-height: 1.35;
+.header__address {
+  justify-self: end;
+}
+
+.address__item {
+  display: block;
 }
 
 .cover {
@@ -109,19 +103,20 @@ main {
   text-transform: uppercase;
 }
 
-.aligned-text_left {
+.aligned-text {
   display: block;
+}
+
+.aligned-text_left {
   text-align: left;
 }
 
 .aligned-text_center {
-  display: block;
   margin-left: 30px;
   text-align: center;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: right;
 }
 
@@ -179,32 +174,11 @@ main {
 .lots__card-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 25px;
+  gap: 25px;
   list-style: none;
 }
 
-.lots__card-list .card:nth-child(1) { 
-  background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-}
-
-.lots__card-list .card:nth-child(2) { 
-  background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-}
-
-.lots__card-list .card:nth-child(3) { 
-  background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
-}
-
-.lost__card-list-item {
+.lots__card-list-item {
   height: 100%;
 }
 
@@ -223,27 +197,21 @@ main {
   width: auto;
   height: 100%;
   padding: 50px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
